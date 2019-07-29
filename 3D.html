@@ -23,35 +23,35 @@
                 top: 0px;
                 height: 300px;
                 width: 300px;
-                opacity: .8;                
+                opacity: .8;
             }
             #box div:nth-child(1){
-                background:url("http://47.94.82.105/uploads/avatar/20190109/1547022675700427.jpg") no-repeat;
+                background:url("image/1.JPG") no-repeat;
                 background-size:100%;
                 -webkit-transform:translateZ(150px);
             }
             #box div:nth-child(2){
-                background:url("http://47.94.82.105/uploads/avatar/20190109/1547022675700427.jpg") no-repeat;
+                background:url("image/2.PNG") no-repeat;
                 background-size:100%;
                 -webkit-transform:translateZ(-150px);
             }
             #box div:nth-child(3){
-                background:url("http://47.94.82.105/uploads/avatar/20190109/1547022675700427.jpg") no-repeat;
+                background:url("image/3.JPG") no-repeat;
                 background-size:100%;
                 -webkit-transform:rotateX(90deg) translateZ(150px);
             }
             #box div:nth-child(4){
-                background:url("http://47.94.82.105/uploads/avatar/20190109/1547022675700427.jpg") no-repeat;
+                background:url("image/4.JPG") no-repeat;
                 background-size:100%;
                 -webkit-transform:rotateX(-90deg) translateZ(150px);
             }
             #box div:nth-child(5){
-                background:url("http://47.94.82.105/uploads/avatar/20190109/1547022675700427.jpg") no-repeat;
+                background:url("image/8.JPG") no-repeat;
                 background-size:100%;
                 -webkit-transform:rotateY(90deg) translateZ(150px);
             }
             #box div:nth-child(6){
-                background:url("http://47.94.82.105/uploads/avatar/20190109/1547022675700427.jpg") no-repeat;
+                background:url("image/5.JPG") no-repeat;
                 background-size:100%;
                 -webkit-transform:rotateY(-90deg) translateZ(150px);
             }
@@ -60,7 +60,7 @@
                     -webkit-transform:rotateY(0deg) rotateX(0deg);
                 }
                 100%{
-                    -webkit-transform:rotateY(360deg) rotateX(360deg);                  
+                    -webkit-transform:rotateY(360deg) rotateX(360deg);
                 }
             }
             @-webkit-keyframes rotate2{
@@ -68,12 +68,12 @@
                     -webkit-transform:rotateY(0deg);
                 }
                 100%{
-                    -webkit-transform:rotateY(360deg);                  
+                    -webkit-transform:rotateY(360deg);
                 }
             }
         </style>
     </head>
-    
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <body>
         <div id = "box">
@@ -86,7 +86,7 @@
         </div>
     </body>
     <script>
-        var flag = true; 
+        var flag = true;
         $(document).ready(function(){
             $(".cubeDiv").click(function(){
                 if(flag){
@@ -94,30 +94,30 @@
                         "animation" : "rotate2 10s linear infinite"
                     })
                     $(".cubeDiv").eq(0).css({
-                        "transform":"translateZ(300px)",    
-                    })              
+                        "transform":"translateZ(300px)",
+                    })
                     $(".cubeDiv").eq(1).css({
                         "transform":"translateZ(300px) rotateY(60deg)",
                         "transform-origin":"0 0 ",
                         "left":"350px",
                     })
                     $(".cubeDiv").eq(2).css({
-                        "transform":"translateZ(-300px) rotateY(-60deg)",   
+                        "transform":"translateZ(-300px) rotateY(-60deg)",
                         "transform-origin":"0 0 ",
                         "left":"350px",
                     })
                     $(".cubeDiv").eq(3).css({
-                        "transform":"translateZ(-300px) rotateY(180deg)",                               
+                        "transform":"translateZ(-300px) rotateY(180deg)",
                     })
                     $(".cubeDiv").eq(4).css({
                         "transform":"translateZ(-300px) rotateY(60deg)",
                         "transform-origin":"right 0 ",
-                        "left":"-350px",                    
+                        "left":"-350px",
                     })
                     $(".cubeDiv").eq(5).css({
                         "transform":"translateZ(300px) rotateY(-60deg)",
                         "transform-origin":"right 0 ",
-                        "left":"-350px",                    
+                        "left":"-350px",
                     })
                     flag = false;
                 }else{
@@ -129,13 +129,13 @@
                         "left":"0"
                     })
                     $(".cubeDiv").eq(0).css({
-                        "transform":"translateZ(150px)",                            
-                    })              
+                        "transform":"translateZ(-150px)",
+                    })
                     $(".cubeDiv").eq(1).css({
                         "transform":"translateZ(150px)",
                     })
                     $(".cubeDiv").eq(2).css({
-                        "transform":"rotateX(90deg) translateZ(150px)", 
+                        "transform":"rotateX(90deg) translateZ(150px)",
                     })
                     $(".cubeDiv").eq(3).css({
                         "transform":"rotateX(-90deg) translateZ(150px)",
@@ -148,7 +148,7 @@
                     })
                     flag = true;
                 }
-                
+
             })
         })
     </script>
